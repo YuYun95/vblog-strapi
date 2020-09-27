@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "vblogs",
+  "info": {
+    "name": "vblog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "githubUsername": {
+      "type": "string"
+    },
+    "blogTitle": {
+      "type": "string"
+    },
+    "blogDescribe": {
+      "type": "string"
+    },
+    "htmlTitle": {
+      "type": "string"
+    },
+    "fontColor": {
+      "type": "string"
+    },
+    "useBackgroundImage": {
+      "type": "string"
+    },
+    "backgroundColorLeft": {
+      "type": "string"
+    },
+    "backgroundColorRight": {
+      "type": "string"
+    },
+    "audioUrl": {
+      "type": "string"
+    },
+    "mini": {
+      "type": "boolean",
+      "default": true
+    },
+    "webSites": {
+      "type": "string"
+    },
+    "avatarUrl": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "location": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/vblog",
+      "handler": "vblog.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/vblog",
+      "handler": "vblog.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/vblog",
+      "handler": "vblog.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
